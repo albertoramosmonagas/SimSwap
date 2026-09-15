@@ -279,15 +279,6 @@ paths:
         The returned value is a technical network signal indicating recency. Consuming parties apply their own decisioning
         outside the API contract. Value `111` indicates the provider positively confirms a SIM
         swap has never happened and the number has never been ported (a sentinel, not an ordinal
-        band). This operation is OPTIONAL: a provider that does not implement it returns
-        `501 NOT_IMPLEMENTED`. A provider that exposes it MUST support the complete standardized
-        band model. If the service is structurally not applicable for the provided identifier —
-        including a valid subscriber for whom no real-time profile is available, or a provider that
-        cannot support the required granularity or determine the band due to retention limitations
-        — it returns `422 SERVICE_NOT_APPLICABLE` (or does not expose the operation). Transient
-        The returned value is a technical network signal indicating recency. Consuming parties apply their own decisioning
-        outside the API contract. Value `111` indicates the provider positively confirms a SIM
-        swap has never happened and the number has never been ported (a sentinel, not an ordinal
         band). A provider that exposes it MUST support the complete standardized
         band model. If the service is structurally not applicable for the provided identifier —
         including a valid subscriber for whom no real-time profile is available, or a provider that
